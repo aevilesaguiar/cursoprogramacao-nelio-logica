@@ -10,40 +10,39 @@ public class Exercicio5 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int dia=sc.nextInt();
+		int dia = sc.nextInt();
 
-		
 		switch (dia) {
 		case 1:
 			System.out.println("Dia da Semana: Domingo");
 			break;
-			
+
 		case 2:
 			System.out.println("Dia da Semana: Segunda");
-			break;		
-			
+			break;
+
 		case 3:
 			System.out.println("Dia da Semana: Terça");
-			break;	
-			
+			break;
+
 		case 4:
 			System.out.println("Dia da Semana: Quarta");
-			break;	
-			
+			break;
+
 		case 5:
 			System.out.println("Dia da Semana: Quinta");
-			break;	
-			
+			break;
+
 		case 6:
 			System.out.println("Dia da Semana: Sexta");
-			break;	
+			break;
 
 		default:
 			System.out.println("Dia da Semana: Inválido");
 			break;
 		}
 		sc.close();
-		
+
 	}
 
 }

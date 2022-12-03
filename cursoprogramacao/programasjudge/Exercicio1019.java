@@ -1,27 +1,47 @@
 package cursoprogramacao.programasjudge;
 
 
-import java.util.Locale;
+
 import java.util.Scanner;
 
 public class Exercicio1019 {
 	public static void main(String[] args) {
 		
 
-		Locale.setDefault(Locale.US);
+
 		Scanner sc = new Scanner(System.in);
 		
-		String nome;
-	    double totalVendas, salario,totalReceber;
-
-	    nome=sc.next();
-	    salario=sc.nextDouble();
-	    totalVendas=sc.nextDouble();
-	    
-	    
-	    totalReceber=totalVendas*0.15+ salario;
-
-	    System.out.printf("TOTAL = R$ %.2f%n",totalReceber);
+		int codigo=sc.nextInt();
+		int quantidade=sc.nextInt();
+		
+		double total=0.0;
+		
+		switch (codigo) {
+		case 1:
+			total+=4.00*quantidade;
+			System.out.printf("Total: R$ %.2f%n",total);
+			break;
+		case 2:
+			total+=4.50*quantidade;
+			System.out.printf("Total: R$ %.2f%n",total);
+			break;
+		case 3:
+			total+=5.00*quantidade;
+			System.out.printf("Total: R$ %.2f%n",total);
+			break;		
+		case 4:
+			total+=2.00*quantidade;
+			System.out.printf("Total: R$ %.2f%n",total);
+			break;	
+		case 5:
+			total+=1.50*quantidade;
+			System.out.printf("Total: R$ %.2f%n",total);
+			break;
+		default:
+			System.out.println("Código inválido ");
+			break;
+		}
+		
 		
 		sc.close();
 		
