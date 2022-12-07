@@ -16,10 +16,10 @@ public static void main(String[] args) {
 	
 
 	for (int i = 0; i < idade.length; i++) {
-		nomes[i]=sc.nextLine();
+		nomes[i]=sc.next();
 		idade[i]=sc.nextInt();
 	}
-	
+	// 1: primeiro vamos encontrar a posicao da maior idade
 	int maiorIdade=idade[0];
 	int posicaoMaiorIdade=0;
 	
@@ -28,11 +28,11 @@ public static void main(String[] args) {
 		if(idade[i]>maiorIdade) {
 			maiorIdade=idade[i];
 			posicaoMaiorIdade=i;
-			
 		}
 	}
 	
-	
+	// 2: agora vamos acessar o vetor de nomes na posicao da maior idade
+	System.out.println("Pessoa mais velha: "+nomes[posicaoMaiorIdade]);
 	
 	
 	
